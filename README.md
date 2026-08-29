@@ -1,98 +1,156 @@
 ![Project Banner](docs/readme-agent/banner.svg)
 
-# Project Understanding
+# Project Scope Analysis: Super-App Syndrome Diagnosis
 
-A decentralized, AI-powered platform for real-time structural health monitoring and predictive maintenance in critical infrastructure.
+The current dependency list indicates an extremely ambitious 'Super-App' scope, combining advanced visualization, AI, Web3, and geospatial mapping, requiring immediate scope reduction to achieve a Minimum Viable Product (MVP).
 
 ## Overview
 
-SustainLABs is a comprehensive IoT and AI solution designed to revolutionize how critical infrastructure (bridges, buildings, pipelines) is monitored. By integrating edge computing, blockchain technology, and advanced machine learning, the platform provides continuous, tamper-proof structural integrity assessments, moving maintenance from reactive to predictive.
+The provided `package.json` reveals a dependency graph that is far too broad for a single, cohesive MVP. The project attempts to integrate six distinct, highly complex technological domains: 3D Visualization (Three.js/Deck.gl), Geospatial Mapping (Leaflet), Computer Vision (TensorFlow), Blockchain (Ethers/Hardhat), Generative AI (Google GenAI), and Voice Processing (Picovoice). This breadth leads to 'Super-App Syndrome,' where the complexity of integrating all components will delay development and dilute the core value proposition. The current structure is not a single product, but a collection of advanced proof-of-concepts.
 
 ## Problem
 
-The current methods of infrastructure monitoring are insufficient, leading to significant economic, safety, and environmental risks. Key pain points include:
+The project suffers from severe scope creep. By attempting to solve multiple, unrelated, high-complexity problems (e.g., energy resilience, structural monitoring, facial recognition, and decentralized finance) simultaneously, the development team risks feature paralysis, resource exhaustion, and the inability to deliver a polished, focused product within a reasonable timeframe.
 
 ## Solution
 
-SustainLABs offers a holistic, end-to-end monitoring ecosystem. It captures real-time sensor data at the edge, processes it using specialized AI models (optimized for low latency), and records the immutable results on a blockchain ledger. This ensures continuous, trustworthy, and actionable insights for proactive maintenance.
+The solution is not to build all these features, but to select one primary, high-impact narrative thread that can leverage the most unique combination of technologies. We must define a single, measurable problem and build the smallest possible system that solves it end-to-end. This requires ruthlessly pruning dependencies that do not directly support the core narrative.
 
 ## Key Features
 
-- Real-time Structural Health Monitoring (SHM) via IoT sensors.
-- Predictive Failure Analysis using AI/ML models.
-- Decentralized, Immutable Data Logging using Blockchain (Merkle Tree).
-- Edge Computing processing for low-latency data analysis (Groq LPU).
-- Comprehensive Dashboard visualization of structural metrics and risk scores.
+- 3D Visualization and Simulation (Three.js, Deck.gl)
+- Geospatial Data Mapping (Leaflet, Deck.gl)
+- AI-Powered Computer Vision (TensorFlow, Face/Hand Detection)
+- Decentralized Ledger Interaction (Web3, Ethers, Hardhat)
+- Generative AI and Voice Input (Google GenAI, Picovoice)
+- Data Reporting and Charting (Chart.js, Recharts)
 
 ## Technology Stack
 
-- Python
-- JavaScript
 - React
-- Node.js
-- TensorFlow/PyTorch (Implied by AI/ML)
-- Blockchain SDK (Implied by Blockchain)
-- IoT/Edge Devices (Implied by Sensors/Groq)
+- TypeScript
+- JavaScript
+- Three.js
+- Deck.gl
+- Leaflet
+- TensorFlow.js
+- Web3.js/Ethers.js
+- Hardhat
+- Chakra UI
 
-## 💡 Overall Assessment: Ambitious, Deep, but Overloaded
+# 🕸️ Spider1: Advanced Web Scraping and Data Aggregation Platform
 
-**Strengths:** Your project is incredibly ambitious, technically deep, and tackles a massive, high-impact global problem (rural energy access). The sheer breadth of technologies and modules demonstrates a profound understanding of modern decentralized systems (AI, Blockchain, IoT, Edge Computing). The visual structure is excellent for a pitch.
-
-**Area for Improvement (The Core Problem):** The project suffers from severe **scope creep**. You are attempting to build a 'Command Center' that manages energy grids, financial transactions, health records, disaster response, and predictive maintenance—all at once. This makes the pitch feel unfocused, overwhelming, and, critically, unachievable in a short timeframe. 
-
-**The Goal:** Your pitch needs to shift from being a 'collection of amazing features' to being a 'single, cohesive solution to one critical problem.'
-
----
-
-## 🎯 Strategic Recommendations: Focus and Narrative
-
-### 1. Define the Single Core Problem (The North Star)
-
-Instead of pitching a 'Rural Development Platform,' pitch a **'Decentralized Energy Resilience and Economic Empowerment System.'**
-
-*   **Action:** Choose ONE primary user journey. For example: *How does a local micro-grid operator use our system to predict maintenance needs and facilitate local energy trading?*
-*   **Impact:** This immediately cuts the noise. The AI, Blockchain, and IoT components all serve this single narrative, making the pitch feel cohesive and intentional.
-
-### 2. Prune the Scope (The MVP Principle)
-
-You must ruthlessly cut features that do not directly support your chosen core narrative. 
-
-*   **Recommendation:** For the pitch, focus on the **Energy Grid Management** and **Predictive Maintenance** modules. These are the most tightly coupled and impactful. 
-*   **De-emphasize/Defer:** The Health Monitoring and Cross-Border Finance modules are too large and distract from the core energy mission. If you must mention them, frame them as **'Phase 2 Expansion Opportunities'** rather than core features.
-
-### 3. Simplify the Tech Stack (The 'Why' vs. The 'What')
-
-Listing 10+ technologies (React, Python, Supabase, MongoDB, Groq, Fluvio, Base, etc.) is overwhelming. It suggests complexity for complexity's sake.
-
-*   **Action:** Group your technologies by function, not by name. Instead of saying, 'We use Fluvio, MongoDB, and Supabase,' say: **'We use a scalable, event-driven backend (e.g., Fluvio/Supabase) to handle high-volume sensor data, while utilizing a decentralized ledger (e.g., Base/Blockchain) for immutable transaction records.'**
-*   **Focus on the *Benefit*:** The audience cares that the data is *immutable* (Blockchain benefit), not that you used *Base* (Technology name).
+Spider1 is a robust, full-stack platform designed for advanced web scraping, data aggregation, and real-time data visualization. Built with a modern microservices architecture, it allows users to efficiently collect, process, and analyze data from diverse web sources, providing actionable insights into market trends and digital footprints.
 
 ---
 
-## 🗣️ Pitch Delivery & Presentation Tips
+## 🚀 Getting Started
 
-### 1. The Opening Hook (The First 60 Seconds)
+This guide provides instructions for setting up and running the Spider1 development environment locally.
 
-Do not start with the tech stack. Start with the pain point and the emotional impact.
+### Prerequisites
 
-*   **Weak Start:** 'We are building a platform using React, Python, and Groq...' 
-*   **Strong Start:** 'In rural areas, a single power outage doesn't just mean darkness; it means lost income, stalled education, and a cycle of poverty. We are building the decentralized intelligence layer that restores economic resilience.'
+Before starting, ensure you have the following installed:
 
-### 2. Structure the Narrative Flow
+*   Node.js (LTS recommended)
+*   npm or Yarn
+*   Docker and Docker Compose (for containerized services)
 
-Use this structure for maximum impact:
+### Installation
 
-1.  **The Problem:** (Emotional hook, clear pain point).
-2.  **The Solution (The Core):** (Your focused system—e.g., the 'Resilience Command Center').
-3.  **How It Works (The Magic):** (Focus on the *process*, not the components. E.g., 'Sensor data feeds into our AI, which predicts failure, triggering a local transaction on the blockchain to fund immediate repairs.')
-4.  **The Impact:** (Quantifiable results: 'This increases uptime by X%' or 'This unlocks $Y in local micro-economy revenue.')
-5.  **The Future:** (The phased roadmap, mentioning the other modules as Phase 2).
+1.  **Clone the Repository:**
+    ```bash
+git clone [repository-url]
+cd spider1
+```
 
-### 3. Visual Presentation (The Demo)
+2.  **Install Dependencies:**
+    ```bash
+# Install frontend and backend dependencies
+npm install
+```
 
-When presenting the UI, do not show all 6 modules at once. **Zoom in.**
+3.  **Run the Application:**
+    ```bash
+# Start the development server
+npm run dev
+```
 
-*   **Focus:** Spend 80% of your demo time on the single, most compelling user flow (e.g., the Predictive Maintenance workflow). Show the data flowing from the sensor (IoT) $\rightarrow$ the AI (Groq) $\rightarrow$ the action (Blockchain/Dashboard). This makes the complexity feel manageable and powerful.
+The application should now be accessible at `http://localhost:3000`.
+
+## ⚙️ Architecture Overview
+
+Spider1 utilizes a modular, service-oriented architecture to ensure scalability, maintainability, and fault tolerance. The system is divided into distinct layers: Presentation, Application Logic, Data Processing, and Persistence.
+
+### System Architecture Diagram
+
+This diagram illustrates the high-level interaction between the core services:
+
+### Data Flow
+
+The data lifecycle in Spider1 follows these steps:
+
+1.  **Request:** A user initiates a scraping task via the Frontend UI.
+2.  **API Gateway:** The Backend API Gateway receives the request and validates the parameters.
+3.  **Task Queue:** The request is placed into a dedicated task queue (e.g., Redis/RabbitMQ) for asynchronous processing.
+4.  **Worker Service:** The Scraping Worker Service picks up the task, executes the scraping logic, and retrieves raw data.
+5.  **Persistence:** The raw and processed data are written to the primary database (PostgreSQL/MongoDB).
+6.  **Notification:** The API Gateway updates the frontend, notifying the user of the task status and providing access to the results.
+
+## 🧩 Core Technical Components
+
+Spider1 is built upon several specialized components, each serving a critical function:
+
+*   **Frontend UI (React/TypeScript):** The user-facing interface. Built with TypeScript for strong typing, ensuring component reliability and developer efficiency.
+*   **Backend API Gateway (Express/TypeScript):** The central entry point for all client requests. It handles routing, authentication, and orchestrates calls to various microservices.
+*   **Scraping Worker Service:** The core engine. This service manages the lifecycle of scraping tasks, handling concurrency, rate limiting, and data extraction from target websites.
+*   **Blockchain Service:** Integrates with external blockchain networks. This service is responsible for recording immutable transaction logs, ensuring data provenance and verifiable data integrity.
+*   **Database Layer (PostgreSQL/MongoDB):** The persistence layer. PostgreSQL is used for structured, relational data (user accounts, task metadata), while MongoDB handles flexible, unstructured data (raw scraped content).
+
+## 🗺️ Application Structure and Features
+
+### Component Map
+
+This map details the relationship between the primary application components:
+
+### Feature Modules
+
+| Module | Description | Key Functionality | Target User | 
+| :--- | :--- | :--- | :--- | 
+| **Dashboard** | Overview of all active and completed scraping tasks. | Quick status checks, task history, and performance metrics. | All Users | 
+| **Task Setup** | Defines the parameters for a new scraping job. | URL input, selector definition (CSS/XPath), scheduling, and rate limiting configuration. | Power Users | 
+| **Data Processing** | Manages the transformation and cleaning of raw data. | Filtering, normalization, aggregation, and schema mapping. | Data Analysts | 
+| **Blockchain Logging** | Records critical task metadata and results immutably. | Proof of collection, verifiable timestamps, and transaction hashing. | Compliance/Audit | 
+| **User Management** | Handles user authentication and role-based access control (RBAC). | Registration, login, profile updates, and permission setting. | All Users | 
+
+## 🖥️ User Interface Flow
+
+### 1. Dashboard (Home)
+
+*   **Purpose:** Provides an immediate snapshot of the system's operational status.
+*   **Content:** Displays a list of recent tasks, overall data volume collected, and system health indicators.
+
+### 2. Task Creation & Configuration
+
+*   **Purpose:** To define *what* and *where* data needs to be scraped.
+*   **Process:** Users input the target URL, select the desired data fields (via CSS/XPath selectors), and set operational parameters (e.g., frequency, concurrency limit).
+
+### 3. Results Viewer
+
+*   **Purpose:** To visualize and export the collected data.
+*   **Functionality:** Presents data in an interactive table format, allowing filtering, sorting, and bulk export (CSV, JSON).
+
+## 📚 Contribution Guidelines
+
+We welcome contributions! To get started:
+
+1.  Fork the repository.
+2.  Create a new branch (`git checkout -b feature/AmazingFeature`).
+3.  Commit your changes (`git commit -m 'Add Awesome Feature'`).
+4.  Push to the branch (`git push origin feature/AmazingFeature`).
+5.  Open a Pull Request.
+
+Please ensure all new code adheres to TypeScript best practices and includes comprehensive unit tests.
 
 ## Setup Guide
 
@@ -132,72 +190,83 @@ High-level system design, data flows, API map, and workflow pipelines derived fr
 ```mermaid
 graph TB
     subgraph Client["Client Layer"]
-        user["User / Operator"]
-        api_client["API / CLI Client"]
+        user["User"]
+        browser["Browser / Client"]
     end
 
-    subgraph Core["src/ — Application Core"]
+    subgraph Core["Spider1 — Web App"]
+        AIRecommendations["AIRecommendations<br/>Component"]
+        ChatHeader["ChatHeader<br/>Component"]
+        ChatModal["ChatModal<br/>Component"]
+        ConversationMemoryPanel["ConversationMemoryPanel<br/>Component"]
+        ErrorBoundary["ErrorBoundary<br/>Component"]
+        FloatingChatButton["FloatingChatButton<br/>Component"]
+        Footer["Footer<br/>Component"]
+        HeatMap["HeatMap<br/>Component"]
+        InteractiveAIChatbot["InteractiveAIChatbot<br/>Component"]
+        MachinePartsMonitor["MachinePartsMonitor<br/>Component"]
+        MaintenanceDashboard["MaintenanceDashboard<br/>Component"]
+        MobileNavigation["MobileNavigation<br/>Component"]
     end
 
     subgraph Data["Data & Artifacts"]
-        d0["src/artifacts/@openzeppelin/contracts/access/Ownable.sol/Ownable.dbg.json"]
-        d1["src/artifacts/@openzeppelin/contracts/access/Ownable.sol/Ownable.json"]
-        d2["src/artifacts/@openzeppelin/contracts/security/ReentrancyGuard.sol/ReentrancyGuard.dbg.json"]
-        d3["src/artifacts/@openzeppelin/contracts/security/ReentrancyGuard.sol/ReentrancyGuard.json"]
+        d0["Ownable.dbg.json"]
+        d1["Ownable.json"]
+        d2["ReentrancyGuard.dbg.json"]
+        d3["ReentrancyGuard.json"]
     end
 
-    subgraph Charts["Metrics & Dashboard Charts"]
-        page_views["Page views chart"]
-        nav_sections["Navigation sections map"]
-        project_showcase["Project showcase grid"]
-        skills_timeline["Skills & experience timeline"]
-        contact_funnel["Contact conversion funnel"]
-        media_gallery["Media & assets gallery"]
+    subgraph Charts["spider1 — Metrics & Views"]
+        cache["cache/ module"]
+        demo["demo/ module"]
+        docs["docs/ module"]
+        scripts["scripts/ module"]
     end
 
-    user --> api_client
-    api_client --> Core
-    user -->|Web UI| dashboard_kpis
-    Core --> page_views
-    page_views --> user
+    user --> browser
+    browser --> Core
+    cache --> user
 ```
 
 ### Data Flow & Charts Pipeline
 
 ```mermaid
 flowchart LR
-    U["User / Event"] --> IN["Untrusted Input"]
+    U["User / Event"] --> IN["User Action"]
 
-    subgraph Pipeline["Processing Pipeline"]
-        p0["Input"]
-        p1["Processing"]
-        p2["Output"]
+    subgraph Pipeline["spider1 App Flow"]
+        p0["Airecommendations"]
+        p1["Chatheader"]
+        p2["Chatmodal"]
+        p3["Conversationmemorypanel"]
+        p4["Errorboundary"]
+        p5["Floatingchatbutton"]
         p0 --> p1
         p1 --> p2
+        p2 --> p3
+        p3 --> p4
+        p4 --> p5
     end
 
-    subgraph Metrics["Metrics & Chart Feeds"]
-        page_views["Page views chart"]
-        nav_sections["Navigation sections map"]
-        project_showcase["Project showcase grid"]
-        skills_timeline["Skills & experience timeline"]
-        contact_funnel["Contact conversion funnel"]
-        media_gallery["Media & assets gallery"]
+    subgraph Metrics["spider1 — Views & Metrics"]
+        cache["cache/ module"]
+        demo["demo/ module"]
+        docs["docs/ module"]
+        scripts["scripts/ module"]
     end
 
     IN --> p0
-    p2 --> OUT["Authorized Output"]
+    p5 --> OUT["UI Response"]
     OUT --> U
-    p2 --> page_views
-    page_views --> U
+    p5 --> cache
+    cache --> U
 ```
 
 ### Component & API Map
 
 ```mermaid
 graph LR
-    subgraph App["src Components"]
-        main["main<br/>Main"]
+    subgraph App["spider1 Components"]
     end
 ```
 
@@ -206,6 +275,15 @@ graph LR
 ```mermaid
 mindmap
   root((spider1))
+    Core
+      Airecommendations
+      Chatheader
+      Chatmodal
+      Conversationmemorypanel
+      Errorboundary
+      Floatingchatbutton
+    Demo & Evaluation
+      Maintenancedashboard
     Web UI
       dashboard
 ```
@@ -230,7 +308,7 @@ Screenshots captured from the running application. Each page is listed with its 
 
 Home — application page at `/`
 
-![Home](docs/readme-agent/pages/dashboard.png)
+![Home](docs/readme-agent/pages/home.png)
 
 #### Dashboard
 
@@ -255,6 +333,12 @@ Gamification — application page at `/gamification`
 Maintenance Mobile — application page at `/maintenance-mobile`
 
 ![Maintenance Mobile](docs/readme-agent/pages/maintenance-mobile.png)
+
+#### Marketplace
+
+Marketplace — application page at `/marketplace`
+
+![Marketplace](docs/readme-agent/pages/marketplace.png)
 
 #### Network
 
